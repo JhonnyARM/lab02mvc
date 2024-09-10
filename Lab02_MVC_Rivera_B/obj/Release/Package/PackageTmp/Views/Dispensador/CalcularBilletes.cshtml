@@ -1,0 +1,39 @@
+﻿@model Lab02_MVC_Rivera_B.Models.ClsDispensador
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CalcularBilletes</title>
+</head>
+<body>
+    <div> 
+        <center>
+            <h1>Dispensador de Billetes</h1>
+            <br />
+            <label>Monto: </label>@Model.monto<br />
+            <label>Billete de 100: </label>@Model.b100<br />
+            <label>Billete de 50: </label>@Model.b50<br />
+            <label>Billete de 20: </label>@Model.b20<br />
+            <label>Billete de 10: </label>@Model.b10<br />
+
+
+            <label>Moneda de 5 </label>@Model.m5<br />
+            <label>Moneda de 3 </label>@Model.m2<br />
+            <label>Moneda de 2 </label>@Model.m1<br />
+            <label>Moneda de 0.5 </label>@Model.m05<br />
+            <label>Moneda de 0.2 </label>@Model.m02<br />
+            <label>Moneda de 0.1 </label>@Model.m01<br />
+            <br />
+            <label>Cantidad de billetes : </label>@Model.cantidad<br />
+            <label>Cantidad de monedas  : </label>@Model.moneda<br />
+            <a href="Index"><< Retornar</a>
+        </center>
+    </div>
+    <br />
+</body>
+</html>
